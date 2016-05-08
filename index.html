@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script src="http://maps.gsi.go.jp/js.lib/jquery/jquery-1.11.1.min.js"></script>
+<script src="http://maps.gsi.go.jp/js.lib/leaflet-0.7.3/leaflet-src.js"></script>
+<script src="http://maps.gsi.go.jp/js/gsimaps.js"></script>
+</head>
+<body>
+<pre id="target"/>
+<script>
+var json = {type: 'FeatureCollection', features: []};
+for(var i in GSI.MUNI_ARRAY) {
+  var r = GSI.MUNI_ARRAY[i].split(',');
+  json.features.push({
+    type: 'Feature',
+    geometry: {type: 'Point', coordinates: [Number(r[5]), Number(r[6])]},
+    properties: {pref: r[1], city: r[3], jisx0401: Number(r[0]), jisx0402: Number(r[2])}
+  });
+}
+document.getElementById('target').innerText = JSON.stringify(json, null, '  ');
+</script>
+</body>
+</html>
