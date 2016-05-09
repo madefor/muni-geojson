@@ -1,9 +1,9 @@
-# muni_geojson
+# muni-geojson
 GeoJSON from GSI.MUNI_ARRAY
 
 ## what is this?
-- [index.html](https://github.com/madefor/muni_geojson/blob/gh-pages/index.html) is a web application to generate GeoJSON from GSI.MUNI_ARRAY of gsimaps.js (Geospatial Information Autority of Japan)
-- muni_#{date}.geojson, such as [muni_160509.geojson](https://github.com/madefor/muni_geojson/blob/gh-pages/muni_160509.geojson), is a snapshot of the output from index.html
+- [index.html](https://github.com/madefor/muni-geojson/blob/gh-pages/index.html) is a web application to generate GeoJSON from GSI.MUNI_ARRAY of gsimaps.js (Geospatial Information Autority of Japan)
+- muni_#{date}.geojson, such as [muni_160509.geojson](https://github.com/madefor/muni-geojson/blob/gh-pages/muni_160509.geojson), is a snapshot of the output from index.html
 
 ## license issue
 The code created by the author is under CC0. The code uses the code licensed under the 2-clause BSD license as follows:
